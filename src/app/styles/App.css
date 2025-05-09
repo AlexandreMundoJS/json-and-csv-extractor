@@ -1,0 +1,41 @@
+/* Full-screen center */
+.app {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f2f5;
+}
+
+.menu-container {
+  text-align: center;
+  background: white;
+  width: 50%;
+  padding: 2rem;
+  margin: 0 auto;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.menu button {
+  width: 200px;
+  padding: 1rem;
+  margin: 0.5rem;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.menu button:hover {
+  background-color: #0056b3;
+}
