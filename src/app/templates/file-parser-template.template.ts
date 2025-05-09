@@ -1,6 +1,8 @@
 import { FileParserInterface } from "./interfaces/file-parser.interface";
 
-export class FileParserTemplate implements FileParserInterface {
+export abstract class FileParserTemplate implements FileParserInterface {
+  abstract exportData(data: unknown): void;
+
   public createFile(data: string, type: string, format: string): void {
     const blob = new Blob([data], {
       type: `${type}/${format.toLowerCase()}`,
